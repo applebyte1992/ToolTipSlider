@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ToolTipSlider_Example' do
+  pod 'ToolTipSlider', :path => '../'
+
+  target 'ToolTipSlider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
