@@ -1,0 +1,6 @@
+framework module ToolTipSlider {
+  umbrella header "ToolTipSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}

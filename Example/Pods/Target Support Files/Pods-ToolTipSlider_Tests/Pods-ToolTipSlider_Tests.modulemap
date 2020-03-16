@@ -1,0 +1,6 @@
+framework module Pods_ToolTipSlider_Tests {
+  umbrella header "Pods-ToolTipSlider_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

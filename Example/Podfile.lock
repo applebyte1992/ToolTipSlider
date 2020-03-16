@@ -1,0 +1,16 @@
+PODS:
+  - ToolTipSlider (0.1.0)
+
+DEPENDENCIES:
+  - ToolTipSlider (from `../`)
+
+EXTERNAL SOURCES:
+  ToolTipSlider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ToolTipSlider: 4a9a26889ea279faabddb3a4ed9a3b925a4f7c97
+
+PODFILE CHECKSUM: 92018e1b8f841fdaf81953ff0099d437b85e8f31
+
+COCOAPODS: 1.7.3
