@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		1EF1CD0775A9B0254554A464B8E7D343 /* ToolTipSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C3AF971A25DFFF347C065FE28DACD7 /* ToolTipSlider-dummy.m */; };
 		353F0D0D8156F7D131EB251B7FEF9932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5203212F241F557100E5AB76 /* ToolTipSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203212D241F557100E5AB76 /* ToolTipSlider.swift */; };
-		52032130241F557100E5AB76 /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203212E241F557100E5AB76 /* ToolTipView.swift */; };
-		52032131241F559B00E5AB76 /* ToolTipSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203212D241F557100E5AB76 /* ToolTipSlider.swift */; };
-		52032132241F559D00E5AB76 /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203212E241F557100E5AB76 /* ToolTipView.swift */; };
+		52032135241F58DE00E5AB76 /* ToolTipSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52032133241F58DE00E5AB76 /* ToolTipSlider.swift */; };
+		52032136241F58DE00E5AB76 /* ToolTipSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52032133241F58DE00E5AB76 /* ToolTipSlider.swift */; };
+		52032137241F58DE00E5AB76 /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52032134241F58DE00E5AB76 /* ToolTipView.swift */; };
+		52032138241F58DE00E5AB76 /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52032134241F58DE00E5AB76 /* ToolTipView.swift */; };
 		5B605AC923F21B22691D8CDAA8274121 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8AEF2ABBA5DC00BBCC8A31E5E7F5C4A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A4D486AECBFADFCC278D0540FDB61326 /* ToolTipSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 076A3182C24D35129BEE0413CD590C7F /* ToolTipSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,8 +49,8 @@
 		3435BB15EAE8A007EBE8FDF516CC982D /* Pods-ToolTipSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToolTipSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		41829B02F19F0533112CF640C4CA3E47 /* Pods-ToolTipSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ToolTipSlider_Example.modulemap"; sourceTree = "<group>"; };
 		4F95D42DC28DB510A7408AC8EF001DB7 /* Pods-ToolTipSlider_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToolTipSlider_Tests-Info.plist"; sourceTree = "<group>"; };
-		5203212D241F557100E5AB76 /* ToolTipSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolTipSlider.swift; sourceTree = "<group>"; };
-		5203212E241F557100E5AB76 /* ToolTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolTipView.swift; sourceTree = "<group>"; };
+		52032133241F58DE00E5AB76 /* ToolTipSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolTipSlider.swift; path = ToolTipSlider/Classes/ToolTipSlider.swift; sourceTree = "<group>"; };
+		52032134241F58DE00E5AB76 /* ToolTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolTipView.swift; path = ToolTipSlider/Classes/ToolTipView.swift; sourceTree = "<group>"; };
 		575F10BF3C863E33D6490D51B2DF505C /* ToolTipSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ToolTipSlider.modulemap; sourceTree = "<group>"; };
 		5D2F8D77CCA966DC78F03FD6A2D6BCD5 /* ToolTipSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ToolTipSlider-prefix.pch"; sourceTree = "<group>"; };
 		5E72B00F8AC420E3A0066DE8C6F9ABB9 /* Pods-ToolTipSlider_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ToolTipSlider_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -117,16 +117,6 @@
 			);
 			name = "Pods-ToolTipSlider_Tests";
 			path = "Target Support Files/Pods-ToolTipSlider_Tests";
-			sourceTree = "<group>";
-		};
-		5203212C241F557100E5AB76 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				5203212D241F557100E5AB76 /* ToolTipSlider.swift */,
-				5203212E241F557100E5AB76 /* ToolTipView.swift */,
-			);
-			name = Source;
-			path = ToolTipSlider/Classes/Source;
 			sourceTree = "<group>";
 		};
 		6DF22F00E654F725873A61C008637F39 /* Products */ = {
@@ -213,7 +203,8 @@
 		DC388F28F399ECF7A38DBB90D70CA968 /* ToolTipSlider */ = {
 			isa = PBXGroup;
 			children = (
-				5203212C241F557100E5AB76 /* Source */,
+				52032133241F58DE00E5AB76 /* ToolTipSlider.swift */,
+				52032134241F58DE00E5AB76 /* ToolTipView.swift */,
 				CDA238EC5AD3EFF309FD2B68D5F27262 /* Pod */,
 				EABFE346BD508FA67227AB0AA12C47E2 /* Support Files */,
 			);
@@ -386,8 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52032130241F557100E5AB76 /* ToolTipView.swift in Sources */,
-				5203212F241F557100E5AB76 /* ToolTipSlider.swift in Sources */,
+				52032137241F58DE00E5AB76 /* ToolTipView.swift in Sources */,
+				52032135241F58DE00E5AB76 /* ToolTipSlider.swift in Sources */,
 				D7632A7EAE3C76A03AF16A3B7A92FE62 /* Pods-ToolTipSlider_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,8 +387,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52032132241F559D00E5AB76 /* ToolTipView.swift in Sources */,
-				52032131241F559B00E5AB76 /* ToolTipSlider.swift in Sources */,
+				52032138241F58DE00E5AB76 /* ToolTipView.swift in Sources */,
+				52032136241F58DE00E5AB76 /* ToolTipSlider.swift in Sources */,
 				1EF1CD0775A9B0254554A464B8E7D343 /* ToolTipSlider-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
