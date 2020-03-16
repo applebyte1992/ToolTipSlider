@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ToolTipSlider'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ToolTipSlider.'
+  s.version          = '1.0.0'
+  s.summary          = 'ToolTipSlider is a subclass for UISlider'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,20 +17,18 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = "ToolTipSlider is a subclass for UISlider control which provides a tool tip above UISlider when tracking begins."
 
-  s.homepage         = 'https://github.com/masroorelahi/ToolTipSlider'
+  s.homepage         = 'https://github.com/applebyte1992/ToolTipSlider'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'masroorelahi' => 'applebyte1992@gmail.com' }
   s.source           = { :git => 'https://github.com/applebyte1992/ToolTipSlider.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.swift_version = '4.0'
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'ToolTipSlider/Source/**/*'
+  s.source_files = 'ToolTipSlider/Classes/**/*'
   
   # s.resource_bundles = {
   #   'ToolTipSlider' => ['ToolTipSlider/Assets/*.png']
