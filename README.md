@@ -22,7 +22,7 @@ pod 'ToolTipSlider'
 
 ## Author
 
-masroorelahi, masroor.elahi@dinifi.com
+masroorelahi
 
 ## License
 
