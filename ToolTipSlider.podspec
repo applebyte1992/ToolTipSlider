@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ToolTipSlider'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'ToolTipSlider is a subclass for UISlider'
 
 # This description is used to generate tags and improve search results.
