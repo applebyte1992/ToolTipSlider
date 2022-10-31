@@ -9,7 +9,7 @@ import UIKit
 
 class ToolTipSlider: UISlider {
     
-    var toolTip = ToolTipView()
+    var toolTipThumb = ToolTipView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,10 +26,10 @@ class ToolTipSlider: UISlider {
     }
     
     func setup() {
-        self.toolTip.backgroundColor = UIColor.clear
-        self.addSubview(self.toolTip)
+        self.toolTipThumb.backgroundColor = UIColor.clear
+        self.addSubview(self.toolTipThumb)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            self.toolTip.updateValue(value: 2)
+            self.toolTipThumb.updateValue(value: 2)
         }
         
     }
@@ -62,17 +62,17 @@ class ToolTipSlider: UISlider {
     func updateToolTipView() {
         let thumbRect = self.knobRect()
         let popupRect = thumbRect.offsetBy(dx: 0, dy: -thumbRect.size.height)
-        toolTip.frame = popupRect.insetBy(dx: 0, dy: 0)
-        toolTip.updateValue(value: Int(self.value * 100))
+        toolTipThumb.frame = popupRect.insetBy(dx: 0, dy: 0)
+        toolTipThumb.updateValue(value: Int(self.value * 100))
     }
     
     func animateToolTip(fadeIn : Bool) {
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(0.3)
         if fadeIn {
-            toolTip.alpha = 1.0
+            toolTipThumb.alpha = 1.0
         } else {
-            toolTip.alpha = 0.0
+            toolTipThumb.alpha = 0.0
         }
         UIView.commitAnimations()
     }
